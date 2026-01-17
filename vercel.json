@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "builds": [
     {
@@ -12,4 +13,24 @@
     }
   ],
   "buildCommand": "pip install -r requirements.txt"
+=======
+{
+  "builds": [
+    {
+      "src": "bot.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "bot.py"
+    }
+  ],
+  "build": {
+    "commands": [
+      "pip install -r requirements.txt"
+    ]
+  }
+>>>>>>> 21650b979c7fcf98d3dbfebc14fb6487e18405e3
 }
